@@ -2419,7 +2419,7 @@ var CreatableSelect = function (_React$Component) {
 	}, {
 		key: 'onOptionSelect',
 		value: function onOptionSelect(option) {
-			if (option === this._createPlaceholderOption) {
+			if (option.label === this._createPlaceholderOption.label) {
 				this.createNewOption();
 			} else {
 				this.select.selectValue(option);
