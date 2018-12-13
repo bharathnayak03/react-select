@@ -145,7 +145,7 @@ class CreatableSelect extends React.Component {
 	}
 
 	onOptionSelect (option) {
-		if (option === this._createPlaceholderOption) {
+		if (option.label === this._createPlaceholderOption.label) {
 			this.createNewOption();
 		} else {
 			this.select.selectValue(option);
